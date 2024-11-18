@@ -252,12 +252,12 @@ Complete the exercise in the space below:
 const createUsername = (userFirstName, userSecondName) => {
     let userFirst3Letters = userFirstName.substring(0, 3)
     let userSecond3Letters = userSecondName.substring(0, 3)
-    let userFirstLenght = userFirst3Letters.lenght
-    let userSecondLenght = userSecondName.lenght
+    let userFirstLength = userFirstName.length
+    let userSecondLength = userSecondName.length
         
-    console.log(userFirstLenght,userSecondLenght)
-    if (userFirstLenght >= 3 && userSecondLenght >= 3) {
-                return (`${(userFirst3Letters)(userSecond3Letters)(userFirstLenght + userSecondLenght)}`)
+   // console.log(userFirstLength,userSecondLength)
+    if (userFirstLength >= 3 && userSecondLength >= 3) {
+                return (`${userFirst3Letters}${userSecond3Letters}${userFirstLength+userSecondLength}`)
     }
     else { return(`Please enter the Names as per the conditiones`) }
 }
@@ -282,6 +282,6 @@ function numArgs(...severalNums) {
 }
     console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
 
-    let text = "Hello World!";
-    let length2 = text.length;
-console.log(length2)
+//     let text = "Hello World!";
+//     let length2 = text.length;
+// console.log(length2)
